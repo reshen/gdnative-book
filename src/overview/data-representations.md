@@ -33,7 +33,7 @@ Classes need to be added as `NativeScript` resources inside the Godot editor, se
 _See `Object` in
 [godot-rust docs](https://docs.rs/gdnative/latest/gdnative/api/struct.Object.html),
 [Godot docs](https://docs.godotengine.org/en/latest/classes/class_object.html)_
-_See `GodotObject`, the Rust trait implemented for all Godot classes, in [godot-rust docs](https://docs.rs/gdnative/latest/gdnative/trait.GodotObject.html)_
+_See `GodotObject`, the Rust trait implemented for all Godot classes, in [godot-rust docs](https://docs.rs/gdnative/latest/gdnative/object/trait.GodotObject.html)_
 
 
 ## Variant

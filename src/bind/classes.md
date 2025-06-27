@@ -58,7 +58,7 @@ impl GodotApi {
 }
 ```
 
-The [`#[derive(NativeClass)]` macro](https://docs.rs/gdnative/latest/gdnative/derive.NativeClass.html) enables a Rust type to be usable as a _native class_ in Godot. It implements [the `NativeClass` trait](https://docs.rs/gdnative/latest/gdnative/nativescript/trait.NativeClass.html), which fills in the glue code required to make the class available in Godot. Among other information, this includes class name and registry of exported methods and properties. For the user, the utility methods `new_instance()` and `emplace()` are provided for constructing `Instance` objects.
+The [`#[derive(NativeClass)]` macro](https://docs.rs/gdnative/latest/gdnative/derive/derive.NativeClass.html) enables a Rust type to be usable as a _native class_ in Godot. It implements [the `NativeClass` trait](https://docs.rs/gdnative/latest/gdnative/export/trait.NativeClass.html), which fills in the glue code required to make the class available in Godot. Among other information, this includes class name and registry of exported methods and properties. For the user, the utility methods `new_instance()` and `emplace()` are provided for constructing `Instance` objects.
 
 The function `new()` corresponds to `_init()` in GDScript. The _base_ is the base object of the script, and must correspond to the class specified in the `#[inherit]` attribute (or `Reference` if the attribute is absent). The parameter can be a shared reference `&T` or a `TRef<T>`.
 
